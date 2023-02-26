@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy Stock
+{% endblock %}
+
+{% block main %}
+    <form action="/history" method="post">
+        <div class="form-group">
+            <input autofocus required class="form-control" name="symbol" placeholder="Video Path" type="text">
+       </div>
+        <button style='width: 200px' class="form-group btn btn-success" type="submit">Submit </button>
+    </form>
+{% endblock %}

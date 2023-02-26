@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Order History
+{% endblock %}
+
+{% block main %}
+
+    <table style='margin-top: 30px' class="table table-striped table-dark">
+      <thead>
+        <tr>
+          <th scope="col"> Transaction Type </th>
+          <th scope="col"> Symbol </th>
+          <th scope="col"> Purchase/Sale Price </th>
+          <th scope="col"> Shares </th>
+          <th scope="col"> Transaction Time (UTC) {{ result }} </th>
+        </tr>
+      </thead>
+      <tbody>
+      </body>
+    </table>
+
+    <title>heatmap - </title>
+      <section>
+        <h2>Heatmap</h2>
+          <img src="data:image/png;base64, {{ plot_url }}">
+      </section>
+{% endblock %}
